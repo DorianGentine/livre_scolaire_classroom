@@ -7,15 +7,9 @@ for (let i = 0; i < randomNumber; i++) {
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
     phone: faker.phone.phoneNumber(),
+    email: faker.internet.email(),
+    avatar: faker.internet.avatar(),
   })
 }
 
-const loadStudents = () => {
-  return new Promise((resolve, reject) => {
-    resolve(students);
-    // reject(`The order could not be completed because some items are sold out.`);
-  });
-};
-
-
-export default loadStudents
+export default students

@@ -1,33 +1,17 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
-import loadStudents from './studentFixture';
+import studentsList from './fixtures/students';
+import Navbar from './components/navbar'
 
 function App() {
-  loadStudents()
-  .then(students => {
-    console.log(`students.length`, students.length)
-    for (let i = 0; i < students.length; i++) {
-      const student = students[i];
-      console.log(student)
-    }
-  })
+  const [students, setStudents] = useState(studentsList)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <div className="App">
+        Hello World !
+      </div>
+    </>
   );
 }
 
