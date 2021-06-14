@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import loadStudents from './studentFixture';
 
 function App() {
+  loadStudents()
+  .then(students => {
+    console.log(`students.length`, students.length)
+    for (let i = 0; i < students.length; i++) {
+      const student = students[i];
+      console.log(student)
+    }
+  })
   return (
     <div className="App">
       <header className="App-header">
