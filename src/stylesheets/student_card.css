@@ -1,0 +1,48 @@
+.student_card{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  /* width: calc(25% - 20px); */
+  transition: .5s;
+}
+.student_card:hover{
+  transform: scale(103%);
+}
+.card_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #29A4FE, #5988EF);
+  border-radius: 5px 5px 0 0 ;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+}
+.card_header > img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card_title{
+  font-weight: 600;
+  margin: 10px 0;
+}
+.card_subtitle{
+  color: #A6CFFF;
+}
+
+
+.card_body{
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card_body > a{
+  margin-bottom: 10px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+.container{
+  padding: 30px;
+  max-width: calc(100% - 60px);
+}
+
+.student-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-grid{
+  display: grid;
+  grid-template: auto / repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media (max-width: 930px) {
+  .student-grid{
+    grid-template: auto / repeat(3, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .student-grid{
+    grid-template: auto / repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .student-grid{
+    grid-template: auto / 1fr;
+  }
+}
