@@ -6,6 +6,7 @@ for (let i = 0; i < randomNumber; i++) {
   students.push({
     firstName: faker.name.firstName(),
     lastName: faker.name.lastName(),
+    area: faker.commerce.department(),
     phone: faker.phone.phoneNumber(),
     email: faker.internet.email(),
     avatar: faker.internet.avatar(),

@@ -1,0 +1,88 @@
+.student_card:hover .cardbtn{
+  max-width: 80px;
+  padding: 2px 6px;
+  overflow-x: visible;
+  opacity: 1;
+}
+.student_card:hover .cardbtn::before{
+  content: '';
+  background-color: #2DA0FD;
+  height: calc(100% + 6px);
+  width: 1px;
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  box-shadow: 1px 0px 1px black;
+}
+.cardbtn{
+  position: absolute;
+  top: 20px;
+  left: 75%;
+  border: 0;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+  max-width: 0;
+  padding: 2px 0;
+  overflow-x: hidden;
+  opacity: 0;
+  cursor: pointer;
+  transition: .5s;
+}
+.cardbtn.deletebtn{
+  top: 50px;
+  background-color: #F76F72;
+  color: white;
+}
+
+
+.editbtn{
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  color: lightgreen;
+  background-color: white;
+  width: calc(50% - 5px);
+  transition: .5s;
+}
+.editbtn.cancel{
+  border-color: #F76F72;
+  color: #F76F72;
+  background-color: white;
+  margin-right: 10px;
+}
+.editbtn:hover{
+  color: white;
+  background-color: lightgreen;
+}
+.editbtn.cancel:hover{
+  background-color: #F76F72;
+}
+
+
+.addbtn{
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 6px;
+  color: white;
+  transition: .5s;
+}
+.addbtn:hover{
+  background-color: white;
+  color: #29A4FE;
+}
+
+.modalbtn{
+  margin-top: 20px;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  background-color: white;
+  color: lightgreen;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.modalbtn:hover{
+  color: white;
+  background-color: lightgreen;
+}

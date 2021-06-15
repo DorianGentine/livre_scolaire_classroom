@@ -1,20 +1,14 @@
 .navbar{
-  width: 50px;
-  height: 100vh;
+  width: calc(100vw - 40px);
+  height: 50px;
   position: fixed;
-  left: 0;
-  padding: 20px 0;
+  z-index: 1;
+  top: 0;
+  padding: 0 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: #1F2731;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #29A4FE, #5988EF);
+  /* background-color: #1F2731; */
   color: white;
-  transition: 1s;
-}
-.navbar > p{
-  margin: 0
-}
-
-.navbar:hover{
-  width: 200px;
 }

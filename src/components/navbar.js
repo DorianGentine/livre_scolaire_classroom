@@ -1,11 +1,11 @@
 import React from 'react';
 import '../stylesheets/navbar.css';
 
-function Navbar() {
+function Navbar({showModal}) {
   return (
     <div className="navbar">
-      <p>CM</p>
-      <p>MC</p>
+      <p>My Classroom Manager</p>
+      <button onClick={showModal} className="addbtn">Ajouter un élève</button>
     </div>
   );
 }
