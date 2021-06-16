@@ -30,11 +30,11 @@ function StudentCard(props) {
   return (
     <div className="student_card">
       {edit ? 
-        <div className="card_header">
-          <input type="url" name="avatar" value={student.avatar} onChange={handleChange}/>
-          <input type="text" name="firstName" value={student.firstName} onChange={handleChange}/>
-          <input type="text" name="lastName" value={student.lastName} onChange={handleChange}/>
-          <input type="text" name="area" value={student.area} onChange={handleChange}/>
+        <div className="card_header edit">
+          <input type="url" name="avatar" placeholder="Url de l'avatar" value={student.avatar} onChange={handleChange}/>
+          <input type="text" name="firstName" placeholder="Prénom" value={student.firstName} onChange={handleChange}/>
+          <input type="text" name="lastName" placeholder="Nom" value={student.lastName} onChange={handleChange}/>
+          <input type="text" name="area" placeholder="Matière" value={student.area} onChange={handleChange}/>
         </div>
       :
         <div className="card_header">
@@ -47,8 +47,8 @@ function StudentCard(props) {
       }
       {edit ? 
         <div className="card_body">
-          <input type="text" name="phone" value={student.phone} onChange={handleChange}/>
-          <input type="text" name="email" value={student.email} onChange={handleChange}/>
+          <input type="text" name="phone" placeholder="Téléphone" value={student.phone} onChange={handleChange}/>
+          <input type="text" name="email" placeholder="Email" value={student.email} onChange={handleChange}/>
           <div>
             <button onClick={cancelEdit} className="editbtn cancel">Annuler</button>
             <button onClick={editStudent} className="editbtn">Valider</button>

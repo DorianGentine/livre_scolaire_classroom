@@ -10,23 +10,42 @@
 
 .student-grid{
   display: grid;
-  grid-template: auto / repeat(4, 1fr);
+  grid-template: auto / repeat(5, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
 
+@media (min-width: 1130px) {
+  .student-grid{
+    max-width: 1130px;
+    margin: auto;
+  }
+}
+@media (max-width: 1130px) {
+  .student-grid{
+    grid-template: auto / repeat(4, 1fr);
+    max-width: 900px;
+    margin: auto;
+  }
+}
 @media (max-width: 930px) {
   .student-grid{
     grid-template: auto / repeat(3, 1fr);
+    max-width: 600px;
+    margin: auto;
   }
 }
 @media (max-width: 720px) {
   .student-grid{
     grid-template: auto / repeat(2, 1fr);
+    max-width: 450px;
+    margin: auto;
   }
 }
 @media (max-width: 520px) {
   .student-grid{
     grid-template: auto / 1fr;
+    max-width: 300px;
+    margin: auto;
   }
 }
